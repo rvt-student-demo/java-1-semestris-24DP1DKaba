@@ -1,10 +1,14 @@
 package rvt;
 
+import java.util.Scanner;
+
 public class GradesAndPoints {
 
     public static void main(String[] args) {
-        int points = 14;
-
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Give points [0-100]: ");
+        int points = Integer.valueOf(scanner.nextLine());
+        
         if (points < 0) {
             System.out.println("impossible!");
         } else if (points <= 49) {
